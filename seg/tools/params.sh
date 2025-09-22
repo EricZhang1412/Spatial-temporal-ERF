@@ -1,0 +1,1 @@
+python ./analysis_tools/get_flops.py ../configs/C-MLP/c-mlp_512x512_ade20k.py --shape 224

@@ -1,0 +1,5 @@
+.vscode/
+*.log
+*.png
+
+erf_compute/spatial_Erf/erf_sdt/pretrained/

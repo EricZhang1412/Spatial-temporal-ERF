@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash dist_test.sh ..configs/v3_drop/fpn_v3-drop-0.78_512x512_10M_ade20k.py work_dirs/fpn_v3-drop-0.56_512x512_10M_ade20k/iter_240000.pth 4
