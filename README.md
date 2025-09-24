@@ -1,5 +1,6 @@
 # Unveiling the Spatial-temporal Effective Receptive Fields of Spiking Neural Networks
-![Endpoint Badge](https://img.shields.io/endpoint)
+![Static Badge](https://img.shields.io/badge/NeurIPS-2025-blue)
+
 
 
 This repository provides the official implementation of the paper **"Unveiling the Spatial-temporal Effective Receptive Fields of Spiking Neural Networks"** (NeurIPS 2025).
@@ -7,52 +8,50 @@ This repository provides the official implementation of the paper **"Unveiling t
 ## 📁 File Structure
 
 ```
- 
+.
+├── erf_compute # Main folder for ST-ERF
+├── det # Codebase for Detection Experiments (Originated from mmsegmentation by OpenMMLab)
+├── seg # 
+└── README.md
 ```
 
 ---
-
-## ⚙️ Prerequisites
-
-The following setup has been tested and verified to work:
-
-- **Python** ≥ 3.5
-- **PyTorch** ≥ 1.9.0
-- **CUDA** ≥ 10.2
 
 ## 🚀 Quick Start
 
-### Run Main Training
-```
-python main_training_parallel.py
-```
+### Environment Setup
 
-### Implementation Notes
-- **Synaptic weight regulation**: Located in `./models/quant_function.py` (lines 22-39, `QCon2d` class)
-- **Spike activity regulation**: Implemented in `functions.py` (lines 39-50, `proposedLoss` function)
+Set your python environment with pytorch (lts or 2.6.0+)...
 
----
+### Play with Spatial-temporal Effective Receptive Field
+
+Go to the directory `erf_compute/`. The structure of this folder is as follows:
+```
+.
+├── izhikevich.py
+├── LICENSE
+├── spatial_Erf # Spatial ERF Code
+│   ├── erf_scnn # S-ERF for Spiking-CNNs
+│   └── erf_sdt  # S-ERF for Spiking-Transformers
+└── temporal_erf_compute.py # Temporal ERF Code
+```
 
 ## 🙏 Acknowledgments
 
-This code is built upon the [Temporal Efficient Training of Spiking Neural Network via Gradient Re-weighting](https://github.com/brain-intelligence-lab/temporal_efficient_training) code. We thank the original authors for their valuable work.
+This whole project is influenced by [*![Static Badge](https://img.shields.io/badge/NeurIPS-2016-yellow)
+Understanding the Effective Receptive Field in Deep Convolutional Neural Networks*](https://papers.nips.cc/paper_files/paper/2016/hash/c8067ad1937f728f51288b3eb986afaa-Abstract.html) .
+
 
 ## 📄 Citation
 
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@inproceedings{wei2024q,
-  title={Q-SNNs: Quantized Spiking Neural Networks},
-  author={Wei, Wenjie and Liang, Yu and Belatreche, Ammar and Xiao, Yichen and Cao, Honglin and Ren, Zhenbang and Wang, Guoqing and Zhang, Malu and Yang, Yang},
-  booktitle={Proceedings of the 32nd ACM International Conference on Multimedia},
-  pages={8441--8450},
-  year={2024}
-}
+[TODO]
 ```
 
 ---
 
 ## 📧 Contact
 
-For questions regarding this implementation, please contact: **Wenjie Wei** 📧 wjwei@std.uestc.edu.cn
+For questions regarding this implementation, please contact: **Jieyuan/Eric** 📧 ericzh_uestc@std.uestc.edu.cn
