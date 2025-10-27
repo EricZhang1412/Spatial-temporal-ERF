@@ -1,7 +1,7 @@
 # Unveiling the Spatial-temporal Effective Receptive Fields of Spiking Neural Networks
 ![Static Badge](https://img.shields.io/badge/NeurIPS-2025-blue)
 [[Openreview]](https://openreview.net/forum?id=tYnJC5ba6j&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2025%2FConference%2FAuthors%23your-submissions))
-[<i class="fa-solid fa-spin fa-file-pdf"></i>[Arxiv Preprint]](http://arxiv.org/abs/2510.21403)
+[<i class="fa-solid fa-file-pdf"></i>[Arxiv Preprint]](http://arxiv.org/abs/2510.21403)
 
 
 
@@ -57,6 +57,7 @@ If you find this work useful, please cite our paper:
 ## 📧 Contact
 
 For questions regarding this implementation, please contact: **Jieyuan/Eric** 📧 ericzh_uestc@std.uestc.edu.cn
+
 
 
 
