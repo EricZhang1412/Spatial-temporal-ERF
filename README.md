@@ -41,7 +41,7 @@ Go to the directory `erf_compute/`. The structure of this folder is as follows:
 ## 🙏 Acknowledgments
 
 This whole project is influenced by [*![Static Badge](https://img.shields.io/badge/NeurIPS-2016-yellow)
-Understanding the Effective Receptive Field in Deep Convolutional Neural Networks*](https://papers.nips.cc/paper_files/paper/2016/hash/c8067ad1937f728f51288b3eb986afaa-Abstract.html) .
+Understanding the Effective Receptive Field in Deep Convolutional Neural Networks*](https://papers.nips.cc/paper_files/paper/2016/hash/c8067ad1937f728f51288b3eb986afaa-Abstract.html) . Thanks for their remarkable research!
 
 
 ## 📄 Citation
@@ -57,5 +57,6 @@ If you find this work useful, please cite our paper:
 ## 📧 Contact
 
 For questions regarding this implementation, please contact: **Jieyuan/Eric** 📧 ericzh_uestc@std.uestc.edu.cn
+
 
 
