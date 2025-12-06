@@ -12,8 +12,8 @@ This repository provides the official implementation of the paper **"Unveiling t
 ```
 .
 ├── erf_compute # Main folder for ST-ERF
-├── det # Codebase for Detection Experiments (Originated from mmsegmentation by OpenMMLab)
-├── seg # 
+├── det # Codebase for Detection Experiments (Originated from mmdetection by OpenMMLab)
+├── seg # Codebase for Segmentation Experiments (Originated from mmsegmentation by OpenMMLab)
 └── README.md
 ```
 
@@ -61,6 +61,7 @@ If you find this work useful, please cite our paper:
 ## 📧 Contact
 
 For questions regarding this implementation, please contact: **Jieyuan/Eric** 📧 ericzh_uestc@std.uestc.edu.cn
+
 
 
 
