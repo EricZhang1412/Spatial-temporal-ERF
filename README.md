@@ -38,6 +38,12 @@ Go to the directory `erf_compute/`. The structure of this folder is as follows:
 └── temporal_erf_compute.py # Temporal ERF Code
 ```
 
+There's `README.md` in these folders, please check it out!
+
+### More visual-aids and checkpoints
+
+Go to  [[🤗ericzhang0328/Spatial-temporal-ERF]](https://huggingface.co/ericzhang0328/Spatial-temporal-ERF/tree/main) and get more you want!
+
 ## 🙏 Acknowledgments
 
 This whole project is influenced by [*![Static Badge](https://img.shields.io/badge/NeurIPS-2016-yellow)
@@ -61,6 +67,7 @@ If you find this work useful, please cite our paper:
 ## 📧 Contact
 
 For questions regarding this implementation, please contact: **Jieyuan/Eric** 📧 ericzh_uestc@std.uestc.edu.cn
+
 
 
 
