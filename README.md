@@ -7,6 +7,10 @@
 
 This repository provides the official implementation of the paper **"Unveiling the Spatial-temporal Effective Receptive Fields of Spiking Neural Networks"** (NeurIPS 2025).
 
+## News
+
+- 2025.10.27: A [blog](https://quantumzeitgeist.com/spiking-neural-networks-limited-receptive-fields-constrain-visual-long-sequence-modeling/) posted on *Quantum Zeitgeist* by Rohail T. about this research. Thx!
+
 ## 📁 File Structure
 
 ```
@@ -70,6 +74,7 @@ url={https://openreview.net/forum?id=tYnJC5ba6j}
 ## 📧 Contact
 
 For questions regarding this implementation, please contact: **Jieyuan/Eric** 📧 ericzh_uestc@std.uestc.edu.cn
+
 
 
 
