@@ -1,0 +1,96 @@
+Metadata-Version: 2.4
+Name: mmsegmentation
+Version: 1.1.1
+Summary: Open MMLab Semantic Segmentation Toolbox and Benchmark
+Home-page: https://github.com/open-mmlab/mmsegmentation
+Author: MMSegmentation Contributors
+Author-email: openmmlab@gmail.com
+License: Apache License 2.0
+Keywords: computer vision,semantic segmentation
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: prettytable
+Requires-Dist: scipy
+Provides-Extra: all
+Requires-Dist: cityscapesscripts; extra == "all"
+Requires-Dist: nibabel; extra == "all"
+Requires-Dist: matplotlib; extra == "all"
+Requires-Dist: numpy; extra == "all"
+Requires-Dist: packaging; extra == "all"
+Requires-Dist: prettytable; extra == "all"
+Requires-Dist: scipy; extra == "all"
+Requires-Dist: codecov; extra == "all"
+Requires-Dist: flake8; extra == "all"
+Requires-Dist: interrogate; extra == "all"
+Requires-Dist: pytest; extra == "all"
+Requires-Dist: xdoctest>=0.10.0; extra == "all"
+Requires-Dist: yapf; extra == "all"
+Provides-Extra: tests
+Requires-Dist: codecov; extra == "tests"
+Requires-Dist: flake8; extra == "tests"
+Requires-Dist: interrogate; extra == "tests"
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: xdoctest>=0.10.0; extra == "tests"
+Requires-Dist: yapf; extra == "tests"
+Provides-Extra: optional
+Requires-Dist: cityscapesscripts; extra == "optional"
+Requires-Dist: nibabel; extra == "optional"
+Provides-Extra: mim
+Requires-Dist: mmcv>=2.0.0rc4; extra == "mim"
+Requires-Dist: mmengine<1.0.0,>=0.5.0; extra == "mim"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary
+
+
+This folder contains the implementation of the E-Spikformer transfer learning for semantic segmentation on ADE-20K. It is based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation).
+
+- Install the [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) library and some required packages.
+
+```bash
+pip install mmcv-full==1.3.0 mmsegmentation==0.11.0
+pip install scipy timm==0.3.2
+```
+
+- Install [apex](https://github.com/NVIDIA/apex) for mixed-precision training
+
+```bash
+git clone https://github.com/NVIDIA/apex
+cd apex
+pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+```
+
+### Data preparation
+Follow the guide in [mmseg](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/dataset_prepare.md#ade20k) to prepare the ADE20k dataset.
+
+### Training
+Download the pretrained model
+
+Pre-trained ckpts 10M: [here](https://drive.google.com/file/d/1pHrampLjyE1kLr-4DS1WgSdnCVPzL6Tq/view?usp=sharing).
+
+Pre-trained ckpts 19M: [here](https://drive.google.com/file/d/1pSGCOzrZNgHDxQXAp-Uelx61snIbQC1H/view?usp=drive_link).
+
+
+Train 19M on 1 GPUs:
+
+- `cd tools`
+- `CUDA_VISIBLE_DEVICES=0,1 ./dist_train.sh ../configs/EFSDTv2/fpn_sdtv3_512x512_19M_ade20k.py 1`
