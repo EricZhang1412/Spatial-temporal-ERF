@@ -59,13 +59,16 @@ Understanding the Effective Receptive Field in Deep Convolutional Neural Network
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@inproceedings{
-zhang2025unveiling,
-title={Unveiling the Spatial-temporal Effective Receptive Fields of Spiking Neural Networks},
-author={Jieyuan Zhang and Xiaolong Zhou and Shuai Wang and Wenjie Wei and Hanwen Liu and Qian Sun and Malu Zhang and Yang Yang and Haizhou Li},
-booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
-year={2025},
-url={https://openreview.net/forum?id=tYnJC5ba6j}
+@inproceedings{NEURIPS2025_3353b22e,
+ author = {Zhang, Jieyuan and Zhou, Xiaolong and Wang, Shuai and Wei, Wenjie and Liu, Hanwen and Sun, Qian and Zhang, Malu and Yang, Yang and Li, Haizhou},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},
+ pages = {35904--35927},
+ publisher = {Curran Associates, Inc.},
+ title = {Unveiling the Spatial-temporal Effective Receptive Fields of Spiking Neural Networks},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/3353b22e6b85a76d45d6b01aa4328be5-Paper-Conference.pdf},
+ volume = {38},
+ year = {2025}
 }
 ```
 
